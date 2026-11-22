@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Happy Birthday Website 2.0 | Aoudumber Bade">
+    <meta name="github" content="https://github.com/Aoudumber-Bade">
+    <title>Shaidatul Aishah</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Audio: replace src with your own file if desired -->
+    <audio id="birthday-audio" src="audio/Say_You_Won_t_Let_Go_-_James_Arthur_Cover_by_Tanner_Patrick_(mp3.pm).mp3"
+        preload="auto" loop autoplay muted playsinline></audio>
+    <button id="audio-play-fallback" class="audio-play-fallback" aria-hidden="true" style="display:none;position:fixed;bottom:20px;right:20px;padding:10px 14px;border-radius:8px;background:#ff6b6b;color:#fff;border:none;box-shadow:0 4px 12px rgba(0,0,0,0.15);cursor:pointer;">Play Music</button>
+
+    <!-- Start button: begins animations and plays the song -->
+    <button id="start-button" class="start-btn" style="position:fixed;bottom:20px;left:20px;padding:10px 14px;border-radius:8px;background:#4caf50;color:#fff;border:none;box-shadow:0 4px 12px rgba(0,0,0,0.15);cursor:pointer;">Start</button>
+
+    <div id="wrapper">
+        <div class="flag__birthday">
+            <img src="./images/1.png" alt="" width="350" class="flag__left">
+            <img src="./images/1.png" alt="" width="350" class="flag__right">
+        </div>
+        <div class="content">
+            <div class="left">
+                <div class="title">
+                    <h1 class="happy">
+                        <span style="--t: 4s;">I</span>
+                        <span style="--t: 4.2s;">M</span>
+                        <span style="--t: 4.4s;"> </span>
+                        <span style="--t: 4.6s;">S</span>
+                        <span style="--t: 4.8s;">O</span>
+                        <span style="--t: 5s;">R</span>
+                        <span style="--t: 5.2s;">R</span>
+                        <span style="--t: 5.4s;">Y</span>
+                     
+                    </h1>
+                    <h1 class="birthday">
+                       
+                        <span style="--t: 5.4s;">S</span>
+                        <span style="--t: 5.6s;">A</span>
+                        <span style="--t: 5.8s;">Y</span>
+                        <span style="--t: 6s;">A</span>
+                        <span style="--t: 6.2s;">N</span>
+                        <span style="--t: 6.4s;">G</span>
+                    </h1>
+                    <div class="hat">
+                        <img src="./images/hat.png" alt="" width="130">
+                    </div>
+                </div>
+                <div class="date__of__birth">
+                    <span></span>
+                </div>
+                <div class="btn">
+                    <button id="btn__letter">
+                        <div class="mail">
+                            Click Here SHAIDATUL AISHAH
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                    </button>
+
+                </div>
+            </div>
+            <div class="right">
+                <div class="box__account">
+                    <div class="image">
+                        <img src="images\WhatsApp Image 2026-11-22 at 11.28.31.jpeg" alt=""> //
+                    </div>
+                    <div class="name">
+                        <i class="fa-solid fa-heart"></i>
+                        <span>Dear SHAIDATUL AISHAH</span>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <div class="balloon_one">
+                        <img width="100px" src="./images/balloon1.png" alt="">
+                    </div>
+                    <div class="balloon_two">
+                        <img width="100px" src="./images/balloon2.png" alt="">
+                    </div>
+                </div>
+                <div class="cricle">
+                    <div class="text__cricle">
+                        <span style="--i: 1;">I</span>
+                        <span style="--i: 2;">M</span>
+                        <span style="--i: 3;"> </span>
+                        <span style="--i: 4;">S</span>
+                        <span style="--i: 5;">O</span>
+                        <span style="--i: 6;">R</span>
+                        <span style="--i: 7;">R</span>
+                        <span style="--i: 8;">Y</span>
+                        <span style="--i: 9;"> </span>
+                        <span style="--i: 10;">D</span>
+                        <span style="--i: 11;">E</span>
+                        <span style="--i: 12;">A</span>
+                        <span style="--i: 13;">R</span>
+                        <span style="--i: 14;"></span>
+                        <span style="--i: 15;">-</span>
+                    </div>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+        </div>
+        <div class="decorate_star star1" style="--t: 15s;"></div>
+        <div class="decorate_star star2" style="--t: 15.2s;"></div>
+        <div class="decorate_star star3" style="--t: 15.4s;"></div>
+        <div class="decorate_star star4" style="--t: 15.6s;"></div>
+        <div class="decorate_star star5" style="--t: 15.8s;"></div>
+        <div class="decorate_flower--one" style="--t: 15s;">
+            <img width="20" src="./images/decorate_flower.png" alt="">
+        </div>
+        <div class="decorate_flower--two" style="--t: 15.3s;">
+            <img width="20" src="./images/decorate_flower.png" alt="">
+        </div>
+        <div class="decorate_flower--three" style="--t: 15.6s;">
+            <img width="20" src="./images/decorate_flower.png" alt="">
+        </div>
+        <div class="decorate_bottom">
+            <img src="./images/decorate.png" alt="" width="100">
+        </div>
+        <div class="smiley__icon">
+            <img src="./images/smiley_icon.png" alt="" width="100">
+        </div>
+
+
+        <div class="boxMail">
+            <i class="fa-solid fa-xmark"></i>
+            <div class="boxMail-container">
+                <div class="card1">
+                    <div class="userImg">
+                        <img src="images\WhatsApp Image 2026-11-22 at 11.28.31.jpeg" alt="">
+                    </div>
+                    <h4 class="username">To: SHAIDATUL AISHAH 💖<span class="underline"></span></h4>
+
+                    <h3>FORGIVE ME</h3>
+                    <div class="imageCute">
+                        <img src="cute1.png" alt="">
+                    </div>
+                </div>
+                <div class="card2">
+                    <div class="card2-content">
+                        <h3>To SHaidatul Aishah</h3>
+                        <h2>Hii aslm Shaidatul Aishah.... Saya minta maaf atas salah silap sayaa terhadap awakk..... 
+                            saya tau awak mesti dh buang saya kan. saya pun tau deep down dalam hati awak tu awak masih sayangkan kita kan
+                        awakk..... saya minta maaf sbb saya tkde beberapa hari harituu. bukan saya sengaja ignore awakk bukan sengaja saya 
+                    tinggalkan awakk. saya tknk pun tinggalkan awakk. saya ada alsan saya and kerja saya masatu. saya minta maaf sbb tk sempat 
+                    nk luangkan masa dengan awak. saya tkde suka or chat pp lain pun belakang awak. tkdee yayangg. saya mintaa maaf yayangg. hurmm 
+                    kita berbaik balikk🥹🥹🥹 </h2>
+                        
+
+                        <div class="imageCute2">
+                            <img src="cute2.png" alt="">
+                        </div>s
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    let datetxt = "22 NOVEMBER 2026 ";
+    let datatxtletter = "My love. You are a very special girl. I always silently thank you for coming into my life. Today, I wish you all the best, lots of health, and lots of joy. I always hope we will celebrate many more birthdays like this together. Happy birthday to you.💕";
+    let titleLetter = "To you";
+    let charArrDate = datetxt.split('');
+    let charArrDateLetter = datatxtletter.split('');
+    let charArrTitle = titleLetter.split('');
+    let currentIndex = 0;
+    let currentIndexLetter = 0;
+    let currentIndexTitle = 0;
+    let date__of__birth = document.querySelector(".date__of__birth span");
+    let text__letter = document.querySelector(".text__letter p");
+    let dateStarted = false;
+    function startDateAnimation(delayMs) {
+        if (dateStarted) return;
+        dateStarted = true;
+        const run = function () {
+            timeDatetxt = setInterval(function () {
+                if (currentIndex < charArrDate.length) {
+                    date__of__birth.textContent += charArrDate[currentIndex];
+                    currentIndex++;
+                }
+                else {
+                    let i = document.createElement("i");
+                    i.className = "fa-solid fa-star"
+                    document.querySelector(".date__of__birth").prepend(i)
+                    document.querySelector(".date__of__birth").appendChild(i.cloneNode(true))
+                    clearInterval(timeDatetxt)
+                }
+            }, 100)
+        };
+        if (typeof delayMs === 'number' && delayMs > 0) {
+            setTimeout(run, delayMs);
+        } else {
+            run();
+        }
+    }
+
+    // Original behavior: start date animation after 12s
+    startDateAnimation(12000);
+
+    var intervalContent;
+    var intervalTitle;
+    $("#btn__letter").on("click", function () {
+        $(".box__letter").slideDown()
+        setTimeout(function () {
+            $(".letter__border").slideDown();
+        }, 1000)
+        setTimeout(function () {
+            intervalTitle = setInterval(function () {
+                if (currentIndexTitle < charArrTitle.length) {
+                    document.querySelector(".title__letter").textContent += charArrTitle[currentIndexTitle];
+                    let i = document.createElement("i");
+                    i.className = "fa-solid fa-heart"
+                    document.querySelector(".title__letter").appendChild(i)
+                    currentIndexTitle++;
+                }
+                else {
+                    clearInterval(intervalTitle)
+                }
+            }, 100)
+        }, 2000)
+        setTimeout(function () {
+            document.querySelector("#heart__letter").classList.add("animationOp");
+            document.querySelector(".love__img").classList.add("animationOp");
+            document.querySelector("#mewmew").classList.add("animationOp");
+        }, 2800)
+        setTimeout(function () {
+            document.querySelectorAll(".heart").forEach((item) => {
+                item.classList.add("animation")
+            })
+        }, 3500)
+        setTimeout(function () {
+            intervalContent = setInterval(function () {
+                if (currentIndexLetter < charArrDateLetter.length) {
+                    text__letter.textContent += charArrDateLetter[currentIndexLetter];
+                    currentIndexLetter++;
+                }
+                else {
+                    clearInterval(intervalContent)
+                }
+            }, 50)
+        }, 6000)
+    })
+    $(".close").on("click", function () {
+        clearInterval(intervalContent)
+        document.querySelector(".title__letter").textContent = "";
+        text__letter.textContent = "";
+        currentIndexLetter = 0
+        currentIndexTitle = 0
+        document.querySelector("#heart__letter").classList.remove("animationOp");
+        document.querySelector(".love__img").classList.remove("animationOp");
+        document.querySelector("#mewmew").classList.remove("animationOp");
+        document.querySelectorAll(".heart").forEach((item) => {
+            item.classList.remove("animation")
+        })
+        $(".box__letter").slideUp();
+        $(".letter__border").slideUp();
+    })
+
+
+
+    let mailBox = document.querySelector('.mail')
+    let boxmail = document.querySelector('.boxMail')
+    var close = document.querySelector('.fa-xmark')
+    mailBox.onclick = function () {
+        mailBox.classList.toggle('active')
+        boxmail.classList.add('active')
+    }
+
+    close.addEventListener('click', function () {
+        boxmail.classList.remove('active')
+    })
+</script>
+
+<script>
+    (function () {
+        const audio = document.getElementById('birthday-audio');
+        const fallback = document.getElementById('audio-play-fallback');
+
+        // Try to autoplay when the page loads
+        function tryPlay() {
+            if (!audio) return;
+            const p = audio.play();
+            if (p !== undefined) {
+                p.then(() => {
+                    // autoplay succeeded
+                    fallback.style.display = 'none';
+                }).catch(() => {
+                    // autoplay blocked — show fallback button
+                    fallback.style.display = 'block';
+                });
+            }
+        }
+
+        // Try on DOMContentLoaded
+        document.addEventListener('DOMContentLoaded', tryPlay);
+
+        // If user interacts anywhere, try to play again and unmute (some browsers allow unmute after gesture)
+        ['click', 'keydown', 'touchstart'].forEach(evt => {
+            window.addEventListener(evt, function onFirstGesture() {
+                try {
+                    if (audio) {
+                        audio.muted = false;
+                        audio.volume = 1;
+                        audio.play().catch(() => {});
+                    }
+                } catch (e) {}
+                tryPlay();
+                window.removeEventListener(evt, onFirstGesture);
+            }, { once: true });
+        });
+
+        // Fallback button handler
+        if (fallback) {
+            fallback.addEventListener('click', function () {
+                audio.play();
+                fallback.style.display = 'none';
+            });
+        }
+    })();
+</script>
+
+<script>
+    // Start button: play audio, trigger animations
+    (function () {
+        const startBtn = document.getElementById('start-button');
+        const audio = document.getElementById('birthday-audio');
+        const fallback = document.getElementById('audio-play-fallback');
+
+        if (!startBtn) return;
+
+        startBtn.addEventListener('click', function () {
+            // Play/unmute audio
+            try {
+                if (audio) {
+                    audio.muted = false;
+                    audio.volume = 1;
+                    audio.play().catch(() => {});
+                }
+                if (fallback) fallback.style.display = 'none';
+            } catch (e) {}
+
+            // Trigger the letter open/animations that are bound to #btn__letter
+            try {
+                if (window.jQuery) {
+                    window.jQuery('#btn__letter').trigger('click');
+                } else {
+                    const btn = document.getElementById('btn__letter');
+                    if (btn) btn.click();
+                }
+            } catch (e) {}
+
+            // Start date animation immediately
+            try {
+                if (typeof startDateAnimation === 'function') startDateAnimation(0);
+            } catch (e) {}
+
+            // Hide/disable the start button after use
+            startBtn.disabled = true;
+            startBtn.style.display = 'none';
+        });
+    })();
+</script>
+
+</html>
